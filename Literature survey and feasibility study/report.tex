@@ -1,0 +1,63 @@
+\documentclass{IEEEtran}
+\usepackage{cite}
+
+\begin{document}
+
+\title{Engine mounts inspection using phase-based video magnification}
+
+\author{Anuar Maratkhan, Kudaibergen Urinbayev, Ibrakhim Ilyassov}
+% \affil{School of Science and Technology\\Nazarbayev University}
+
+\maketitle
+
+\section{Introduction}
+
+Human visual system has some limitations. While human can recognize some vivid oscillations such as leave swings on the wind, some of subtle fluctuations like pulse or sway of bridge left unperceivable for the naked eye. However, small changes in motion could contain essential information of the system and could be quantitively and qualitatively analyzed.
+
+
+Several video magnification techniques were proposed. In 2005, Lie et al suggested Lagrangian approach to amplify motions in which pixels are tracked and motion vectors are amplified directly to synthesize videos with larger motions. This method required motion segmentation and manual correction of filling the holes after video processing \cite{Liu:2005:MM:1073204.1073223}.
+
+
+Further, in 2012 new magnification method was proposed that used Eulerian approach. Eulerian Video Magnification (EVM) – computational method of video amplification of subtle motions and color changes over time \cite{Wu:2012:EVM:2185520.2185561}. The method saves large computational resources required in Lagrangian method of video magnifiying. However, the EVM method has some limitations due to its linearity. The method magnifies \textbf{all} motions in spatial domain, and thus, also magnifies the noise being present in the video.
+
+A year later, \cite{Wadhwa:2013:PVM:2461912.2461966} discovered a method of the non-linear video magnification based on phase amplification in local sub-bands. By temporal filtering, the proposed method does not magnify noise, and therefore, makes possible to magnify video motions more. The method is based on obtaining spatial frequency sub-bands using Complex Steerable Pyramids, and further temporal filtering using bandpass filter. Then, we can amplify the certain phases which are motions in the video.
+
+Therefore, phase-based method was chosen for our work.
+
+\section{Video magnification applications}
+
+Since Video Magnification is noninvasive analytical tool, this method has big practical potential in different areas such as medicine and structural analysis.
+
+\subsection{Vital Sign Monitoring}
+
+The study \cite{Aubakir2016VitalSM} was proved that by implementing this method using RGB video from smartphone and thermal video from an infrared camera it is possible to make a contactless measure of heartbeat and respiratory rate with accuracy of more than 90 percent. That monitoring system may be used implemented in healthcare facilities.
+
+\subsection{Civil infrastructure Application}
+
+The standard civil infrastructure inspection mostly requires wired accelerometers and other sensors for structural health monitoring (SHM). Thus, since video magnification is noninvasive technique it could complement current sensor system and could used in non-destructive testing (NDT).
+
+\section{Engine mount test}
+
+Engine mount is car component that dampens the engine vibrations. Engine may generate large amount oscillations while working and malfunctioning engine mount may lead to component damaging causing threat to human safety and car proper functioning. Thus, it is very important to have stable engine suspension and periodically should be checked for good condition.
+
+Vehicle production is a complex process. And all produced products require verification by the specialists in the well equipped service stations. We propose engine mount manufacturing inspection by faster and simpler method that requires ordinary video camera. We will use Phase-based Video Magnification method for revealing defects in motor mounts. 
+
+By comparing subtle vibrations in video sequence of engine of just manufactured car with the video of engine with properly working motor mount the defects of components could be detected. Thus, if the root-mean-square deviation(RMSE) of two videos exceeding appropriate threshold this means more rigorous inspection is required and some mount flaws may exist in the system. 
+
+Similar works on car engine inspection using motion magnifications were not found. Therefore, this work has some novelty and may be advantageous for the car manufacturers. 
+
+\section{Project implementation}
+
+To implement this project one Volkswagen car will be taken to shoot testing video samples. Firstly, some video sequences of fully working car engine will be taken. After, one engine mount will be removed and 10 video samples will be taken. These videos will be compared.
+
+Using Matlab code provided by \cite{Wadhwa:2013:PVM:2461912.2461966} and implement it in Python programming language using OpenCV. Code will be customized to meet the required goal of the project. Two videos will be match each other by comparing two amplitude peaks of engine vibrations.
+
+\section{Conclusion}
+
+Thus, during paper review and recent paper analyze on motion magnification we understood that for our project EVM method is inferior to Phase-Based motion magnification. Therefore, Phase-Based method was chosen. The working principle and theoretical concepts of the method were successfully grasped, and could be further implemented and modified for our use.
+
+\bibliographystyle{IEEEtran}
+\bibliography{reference}
+\printbibliography
+
+\end{document}

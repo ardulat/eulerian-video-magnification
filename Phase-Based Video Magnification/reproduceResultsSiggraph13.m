@@ -15,12 +15,12 @@ scaleAndClipLargeVideos = true; % With this enabled, approximately 4GB of memory
 %scaleAndClipLargeVideos = false;
 
 %% Car Engine
-inFile = fullfile(dataDir, 'car_engine_result.mp4');
-samplingRate = 400; % Hz
+inFile = fullfile(dataDir, '1.mp4');
+samplingRate = 120; % Hz
 loCutoff = 15;    % Hz
 hiCutoff = 25;    % Hz
-alpha = 15;    
-sigma = 1;         % Pixels
+alpha = 50;    
+sigma = 3;         % Pixels
 pyrType = 'octave';
 if (scaleAndClipLargeVideos)
     phaseAmplify(inFile, alpha, loCutoff, hiCutoff, samplingRate, resultsDir,'sigma', sigma,'pyrType', pyrType,'scaleVideo', 0.5);

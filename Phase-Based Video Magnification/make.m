@@ -1,5 +1,5 @@
 
 % Build matlabPyrTools
 fprintf('Building matlabPyrTools...\n');
-run(fullfile('matlabPyrTools', 'MEX', 'compilePyrTools.m'));
+run(fullfile('matla?bPyrTools', 'MEX', 'compilePyrTools.m'));
 

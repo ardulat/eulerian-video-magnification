@@ -1,0 +1,67 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{Liu:2005:MM:1073204.1073223}
+\citation{Liu:2005:MM:1073204.1073223}
+\citation{Wu:2012:EVM:2185520.2185561}
+\citation{Wu:2012:EVM:2185520.2185561}
+\citation{Wu:2012:EVM:2185520.2185561}
+\@writefile{toc}{\contentsline {section}{\numberline {I}Introduction}{1}{section.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Summary of motion magnification processing steps \cite  {Liu:2005:MM:1073204.1073223}}}{1}{figure.1}}
+\newlabel{fig:Liu}{{1}{1}{Summary of motion magnification processing steps \cite {Liu:2005:MM:1073204.1073223}}{figure.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Overview of the Eulerian video magnification framework. The system first decomposes the input video sequence into different spatial frequency bands, and applies the same temporal filter to all bands. The filtered spatial bands are then amplified by a given factor α, added back to the original signal, and collapsed to generate the output video. The choice of temporal filter and amplification factors can be tuned to support different applications. For example, we use the system to reveal unseen motions of a Digital SLR camera, caused by the flipping mirror during a photo burst (camera; full sequences are available in the supplemental video). Referenced from \cite  {Wu:2012:EVM:2185520.2185561}}}{1}{figure.2}}
+\newlabel{fig:EVM}{{2}{1}{Overview of the Eulerian video magnification framework. The system first decomposes the input video sequence into different spatial frequency bands, and applies the same temporal filter to all bands. The filtered spatial bands are then amplified by a given factor α, added back to the original signal, and collapsed to generate the output video. The choice of temporal filter and amplification factors can be tuned to support different applications. For example, we use the system to reveal unseen motions of a Digital SLR camera, caused by the flipping mirror during a photo burst (camera; full sequences are available in the supplemental video). Referenced from \cite {Wu:2012:EVM:2185520.2185561}}{figure.2}{}}
+\citation{Wadhwa:2013:PVM:2461912.2461966}
+\citation{Wadhwa:2013:PVM:2461912.2461966}
+\citation{119725}
+\citation{119725}
+\citation{Wadhwa:2013:PVM:2461912.2461966}
+\citation{Wadhwa:2013:PVM:2461912.2461966}
+\citation{Wadhwa:2013:PVM:2461912.2461966}
+\citation{Wadhwa:2013:PVM:2461912.2461966}
+\citation{Wadhwa:2013:PVM:2461912.2461966}
+\@writefile{toc}{\contentsline {section}{\numberline {II}Phase-based Video Magnification}{2}{section.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Motion magnification of a crane imperceptibly swaying in the wind. (a) Top: a zoom-in onto a patch in the original sequence (crane) shown on the left. Bottom: a spatiotemporal XT slice of the video along the profile marked on the zoomed-in patch. (b-c) Linear [Wu et al. 2012] and phase-based motion magnification results, respectively, shown for the corresponding patch and spatiotemporal slice as in (a). The previous, linear method visualizes the crane’s motion, but amplifies both signal and noise and introduces artifacts for higher spatial frequencies and larger motions, shown by the clipped intensities (bright pixels) in (b). In comparison, our new phase-based method supports larger magnification factors with significantly fewer artifacts and less noise (c). The full sequences are available in the supplemental video. Referenced from \cite  {Wadhwa:2013:PVM:2461912.2461966}}}{2}{figure.3}}
+\newlabel{fig:phase-based}{{3}{2}{Motion magnification of a crane imperceptibly swaying in the wind. (a) Top: a zoom-in onto a patch in the original sequence (crane) shown on the left. Bottom: a spatiotemporal XT slice of the video along the profile marked on the zoomed-in patch. (b-c) Linear [Wu et al. 2012] and phase-based motion magnification results, respectively, shown for the corresponding patch and spatiotemporal slice as in (a). The previous, linear method visualizes the crane’s motion, but amplifies both signal and noise and introduces artifacts for higher spatial frequencies and larger motions, shown by the clipped intensities (bright pixels) in (b). In comparison, our new phase-based method supports larger magnification factors with significantly fewer artifacts and less noise (c). The full sequences are available in the supplemental video. Referenced from \cite {Wadhwa:2013:PVM:2461912.2461966}}{figure.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-A}}Complex Steerable Pyramids}{2}{subsection.2.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Our phase-based approach manipulates motion in videos by analyzing the signals of local phase over time in different spatial scales and orientations. We use complex steerable pyramids to decompose the video and separate the amplitude of the local wavelets from their phase (a). We then temporally filter the phases independently at at each location, orientation and scale (b). Optionally, we apply amplitude-weighted spatial smoothing (c, Sect. 3.4) to increase the phase SNR, which we empirically found to improve the results. We then amplify or attenuate the temporally-bandpassed phases (d), and reconstruct the video (e). This example shows the processing pipeline for the membrane sequence (Sect. 4), using a pyramid of two scales and two orientations (the relative difference in size between the pyramid levels is smaller in this figure for clarity of the visualization). Referenced from \cite  {Wadhwa:2013:PVM:2461912.2461966}}}{2}{figure.4}}
+\newlabel{fig:phases}{{4}{2}{Our phase-based approach manipulates motion in videos by analyzing the signals of local phase over time in different spatial scales and orientations. We use complex steerable pyramids to decompose the video and separate the amplitude of the local wavelets from their phase (a). We then temporally filter the phases independently at at each location, orientation and scale (b). Optionally, we apply amplitude-weighted spatial smoothing (c, Sect. 3.4) to increase the phase SNR, which we empirically found to improve the results. We then amplify or attenuate the temporally-bandpassed phases (d), and reconstruct the video (e). This example shows the processing pipeline for the membrane sequence (Sect. 4), using a pyramid of two scales and two orientations (the relative difference in size between the pyramid levels is smaller in this figure for clarity of the visualization). Referenced from \cite {Wadhwa:2013:PVM:2461912.2461966}}{figure.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {III}Experimental setup}{2}{section.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {IV}Usage}{2}{section.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-A}}MATLAB code}{2}{subsection.4.1}}
+\citation{Wadhwa:2013:PVM:2461912.2461966}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {IV-A}1}Input videos}{3}{subsubsection.4.1.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {IV-A}2}Processing the video}{3}{subsubsection.4.1.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {IV-A}3}Output videos}{3}{subsubsection.4.1.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-B}}Python code}{3}{subsection.4.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {IV-B}1}Matching frames of videos}{3}{subsubsection.4.2.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {IV-B}2}Calculating RMSE}{3}{subsubsection.4.2.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {IV-B}3}Usage for calculating RMSE}{3}{subsubsection.4.2.3}}
+\@writefile{toc}{\contentsline {paragraph}{\numberline {\unhbox \voidb@x \hbox {IV-B}3a}Cropping a template image}{3}{paragraph.4.2.3.1}}
+\newlabel{fig:RMSE}{{\unhbox \voidb@x \hbox {IV-B}3a}{3}{Cropping a template image}{paragraph.4.2.3.1}{}}
+\@writefile{toc}{\contentsline {paragraph}{\numberline {\unhbox \voidb@x \hbox {IV-B}3b}Calculating RMSE}{3}{paragraph.4.2.3.2}}
+\bibstyle{IEEEtran}
+\bibdata{reference}
+\bibcite{Liu:2005:MM:1073204.1073223}{1}
+\bibcite{Wu:2012:EVM:2185520.2185561}{2}
+\bibcite{Wadhwa:2013:PVM:2461912.2461966}{3}
+\bibcite{Aubakir2016VitalSM}{4}
+\bibcite{119725}{5}
+\@writefile{toc}{\contentsline {section}{\numberline {V}Results}{4}{section.5}}
+\@writefile{toc}{\contentsline {section}{\numberline {VI}Conclusion}{4}{section.6}}
+\@writefile{toc}{\contentsline {section}{References}{4}{section*.1}}

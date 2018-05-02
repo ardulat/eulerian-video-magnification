@@ -12,4 +12,4 @@ You need to call a python script and pass video’s name as argument:
 # Calculating RMSE
 
   Run python script and pass two videos’ filenames as arguments in order to compare them. <br>
-  Example: $ python calculate.py 1.avi 2.avi
+  > Example: $ python calculate.py 1.avi 2.avi
